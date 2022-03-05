@@ -18,3 +18,15 @@ Route::get('/form', 'AuthController@form');
 Route::post('/welcome', 'AuthController@submit');
 
 Route::get('/data-tables', 'IndexController@tables');
+
+Route::get('/cast/create', 'CastController@Create');
+
+Route::get('/cast', 'CastController@Index');
+//update db
+Route::post('/cast', 'CastController@store');
+Route::get('/cast/{cast_id}', 'CastController@show');//show detail of a cast
+
+Route::get('/cast/{cast_id}/edit', 'CastController@edit');
+Route::put('/cast/{cast_id}/', 'CastController@update');//save edit
+
+Route::delete('/cast/{cast_id}', 'CastController@destroy');//delete

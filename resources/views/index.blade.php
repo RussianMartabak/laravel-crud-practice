@@ -21,5 +21,6 @@
         <li>Mendaftarkan di <a href="/form">Form Sign Up</a></li>
         <li>Selesai</li>
     </ol>
+    <p>Lihat <a href="/cast">Cast</a></p>
 
 @endsection
